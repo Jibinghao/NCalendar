@@ -146,7 +146,7 @@ public class InnerPainter implements CalendarPainter {
 
     //选中背景
     private void drawSelectBg(Canvas canvas, RectF rectF, int alphaColor, boolean isToday) {
-        mCirclePaint.setStyle(isToday ? Paint.Style.FILL_AND_STROKE : Paint.Style.STROKE);
+        mCirclePaint.setStyle( Paint.Style.FILL_AND_STROKE );
         mCirclePaint.setStrokeWidth(mAttrs.hollowCircleStroke);
         mCirclePaint.setColor(isToday ? mAttrs.selectCircleColor : mAttrs.hollowCircleColor);
         mCirclePaint.setAlpha(alphaColor);

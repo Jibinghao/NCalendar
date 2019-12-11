@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.necer.view.WeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+    <com.necer.calendar.MonthCalendar
+        android:id="@+id/monthCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hollowCircleColor="#FFF99D31"
+        app:isShowHoliday="false"
+        app:isShowLunar="false"
+        app:pointColor="#FFF99D31"
+        app:pointDistance="-20dp"
+        app:numberBackgroundTextSize="12dp"
+        app:selectCircleColor="#FFF99D31"
+        app:selectCircleRadius="15dp"
+        app:selectSolarTextColorColor="#ffffff"
+        app:solarTextSize="12dp"
+        app:solarTextColor="#333333"
+        app:todaySolarSelectTextColor="#ffffff"
+        app:todaySolarTextColor="#333333" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
