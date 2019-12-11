@@ -48,7 +48,7 @@ public class TestFHActivity extends BaseActivity {
 
     public void add() {
         if (post == 1) {
-            List<String> pointList = Arrays.asList("2019-12-29", "2019-11-29", "2019-11-20", "2020-01-29", "2019-02-01");
+            List<String> pointList = Arrays.asList("2019-12-29", "2019-11-29", "2019-12-11", "2020-01-29", "2019-02-01");
             InnerPainter innerPainter = (InnerPainter) monthCalendar.getCalendarPainter();
             innerPainter.addPointList(pointList);
         }else if (post==2){

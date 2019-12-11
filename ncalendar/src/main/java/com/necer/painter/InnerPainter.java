@@ -207,7 +207,7 @@ public class InnerPainter implements CalendarPainter {
     private void drawPoint(Canvas canvas, RectF rectF, boolean isTodaySelect, int alphaColor, LocalDate date) {
         if (mPointList.contains(date)) {
             mCirclePaint.setStyle(Paint.Style.FILL);
-            mCirclePaint.setColor(isTodaySelect ? mAttrs.todaySelectContrastColor : mAttrs.pointColor);
+            mCirclePaint.setColor( mAttrs.pointColor);
             mCirclePaint.setAlpha(alphaColor);
             canvas.drawCircle(rectF.centerX(), mAttrs.pointLocation == Attrs.DOWN ? (rectF.centerY() + mAttrs.pointDistance) : (rectF.centerY() - mAttrs.pointDistance), mAttrs.pointSize, mCirclePaint);
         }
